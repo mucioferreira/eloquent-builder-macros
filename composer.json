@@ -1,0 +1,46 @@
+{
+    "name": "exyplis/eloquent-builder-macros",
+    "description": "A set of helpful macros for Laravel Eloquent query builder",
+    "license": "MIT",
+    "keywords": [
+        "exyplis",
+        "php",
+        "laravel",
+        "eloquent"
+    ],
+    "authors": [
+        {
+            "name": "Kostiantyn Bozhko",
+            "email": "bks@exyplis.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": ">=5.4 < 9.0",
+        "illuminate/database": ">=5.4 < 9.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "suggest": {
+        "spatie/laravel-collection-macros": "A set of useful Laravel collection macros."
+    },
+    "autoload": {
+        "psr-4": {
+            "Exyplis\\EloquentBuilderMacros\\": "src"
+        }
+    },
+    "scripts": {
+        "cs": "phpcs --standard=psr2 src/"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Exyplis\\EloquentBuilderMacros\\EloquentBuilderMacrosServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
